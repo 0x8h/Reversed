@@ -1,6 +1,6 @@
-# opcodes
+# pseudocodes
 
-### why opcode?
+### why pseudo?
 
 - Obufuscated files
 - C/++ code

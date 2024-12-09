@@ -1,4 +1,4 @@
-﻿//Sorry it's opcode. because original file obfuscated. :(
+﻿//Sorry it's pseudocode. because original file obfuscated. :(
 
 using System;
 using System.Windows.Forms;

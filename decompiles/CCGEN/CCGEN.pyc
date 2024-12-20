@@ -1,0 +1,488 @@
+0 LOAD_CONST 0 (0)
+2 LOAD_CONST 1 (None)
+4 IMPORT_NAME 0 (random)
+6 STORE_NAME 0 (random)
+
+8 LOAD_CONST 0 (0)
+10 LOAD_CONST 1 (None)
+12 IMPORT_NAME 1 (os)
+14 STORE_NAME 1 (os)
+
+16 LOAD_CONST 0 (0)
+18 LOAD_CONST 1 (None)
+
+20 IMPORT_NAME 2 (time)
+22 STORE_NAME 2 (time)
+
+24 LOAD_CONST 2 ("\x1b[32m")
+26 STORE_NAME 3 (G)
+28 LOAD_CONST 3 ("\x1b[0m]")
+30 STORE_NAME 4 (E)
+
+32 LOAD_CONST 4 (code object generate_number)
+34 LOAD_CONST 5 ("generate_number")
+36 MAKE_FUNCTION 0 (No arguments)
+38 STORE_NAME 5 (generate_number)
+
+40 LOAD_CONST 6 (code object main)
+42 LOAD_CONST 7 ("main")
+44 MAKE_FUNCTION 0 (No arguments)
+46 STORE_NAME 6 (main)
+
+48 LOAD_NAME 7 (__name__)
+50 LOAD_CONST 8 ("__main__")
+52 COMPARE_OP 2 (==)
+54 POP_JUMP_IF_FALSE 33 (to 66)
+56 LOAD_NAME 6 (main)
+
+58 CALL_FUNCTION 0 (0 positional arguments)
+60 POP_TOP
+
+62 LOAD_CONST 1 (None)
+64 RETURN_VALUE
+66 LOAD_CONST 1 (None)
+68 RETURN_VALUE
+
+
+0 LOAD_GLOBAL 0 (print)
+2 LOAD_CONST 1 ("\n-------------------------------------------------------------------------------------------\n")
+4 CALL_FUNCTION 1 (1 positional argument)
+6 POP_TOP
+8 LOAD_CONST 2 ("")
+10 LOAD_METHOD 1 (join)
+12 LOAD_CONST 3 (code object <listcomp>)
+14 LOAD_CONST 4 ("generate_number.<locals>.<listcomp>")
+16 MAKE_FUNCTION 0 (No arguments)
+18 LOAD_GLOBAL 2 (range)
+20 LOAD_CONST 5 (10)
+22 CALL_FUNCTION 1 (1 positional argument)
+
+24 GET_ITER
+26 CALL_FUNCTION 1 (1 positional argument)
+28 CALL_METHOD 1 (1 positional argument)
+30 STORE_FAST 1 (random_digits)
+32 LOAD_FAST 0 (prefix)
+34 FORMAT_VALUE 0
+
+36 LOAD_FAST 1 (random_digits)
+38 FORMAT_VALUE 0
+40 BUILD_STRING 2
+42 STORE_FAST 2 (full_number)
+44 LOAD_GLOBAL 3 (random)
+46 LOAD_METHOD 4 (randint)
+
+48 LOAD_CONST 6 (1)
+50 LOAD_CONST 7 (12)
+52 CALL_METHOD 2 (2 positional arguments)
+54 STORE_FAST 3 (month)
+
+56 LOAD_FAST 3 (month)
+58 LOAD_CONST 8 ("02d")
+60 FORMAT_VALUE 4
+62 STORE_FAST 4 (month_str)
+64 LOAD_GLOBAL 3 (random)
+66 LOAD_METHOD 4 (randint)
+
+68 LOAD_CONST 9 (25)
+70 LOAD_CONST 10 (30)
+72 CALL_METHOD 2 (2 positional arguments)
+74 STORE_FAST 5 (random_25_30)
+76 LOAD_GLOBAL 3 (random)
+78 LOAD_METHOD 4 (randint)
+
+80 LOAD_CONST 11 (100)
+82 LOAD_CONST 12 (999)
+84 CALL_METHOD 2 (2 positional arguments)
+86 STORE_FAST 6 (three_digits)
+88 LOAD_FAST 2 (full_number)
+90 FORMAT_VALUE 0
+92 LOAD_CONST 13 ("\n")
+94 LOAD_FAST 4 (month_str)
+96 FORMAT_VALUE 0
+98 LOAD_FAST 5 (random_25_30)
+100 FORMAT_VALUE 0
+102 LOAD_CONST 13 ("\n")
+
+104 LOAD_FAST 6 (three_digits)
+106 FORMAT_VALUE 0
+108 BUILD_STRING 6
+110 RETURN_VALUE
+
+
+0 BUILD_LIST 0
+2 LOAD_FAST 0 (.0)
+4 FOR_ITER 10 (to 26)
+6 STORE_FAST 1 (_)
+8 LOAD_GLOBAL 0 (str)
+10 LOAD_GLOBAL 1 (random)
+12 LOAD_METHOD 2 (randint)
+14 LOAD_CONST 0 (0)
+16 LOAD_CONST 1 (9)
+18 CALL_METHOD 2 (2 positional arguments)
+20 CALL_FUNCTION 1 (1 positional argument)
+22 LIST_APPEND 2
+24 JUMP_ABSOLUTE 2 (to 4)
+26 RETURN_VALUE
+
+
+0 NOP
+2 LOAD_GLOBAL 0 (print)
+4 LOAD_GLOBAL 1 (G)
+6 LOAD_CONST 2 ("-------------------------------------------------------------------------------------------")
+8 BINARY_ADD
+10 CALL_FUNCTION 1 (1 positional argument)
+
+12 POP_TOP
+14 LOAD_GLOBAL 0 (print)
+16 LOAD_CONST 3 ("\n\n     __________  __________  __________   _________    ____  ____     _____________   __   \n    / ____/ __ \\/ ____/ __ \\/  _/_  __/  / ____/   |  / __ \\/ __ \\   / ____/ ____/ | / /   \n   / /   / /_/ / __/ / / / // /  / /    / /   / /| | / /_/ / / / /  / / __/ __/ /  |/ /    \n  / /___/ _, _/ /___/ /_/ // /  / /    / /___/ ___ |/ _, _/ /_/ /  / /_/ / /___/ /|  /     \n  \\____/_/ |_/_____/_____/___/ /_/     \\____/_/  |_/_/ |_/_____/   \\____/_____/_/ |_/      \n                                                                                         \n\n")
+18 CALL_FUNCTION 1 (1 positional argument)
+
+20 POP_TOP
+22 LOAD_GLOBAL 0 (print)
+24 LOAD_CONST 2 ("-------------------------------------------------------------------------------------------")
+26 CALL_FUNCTION 1 (1 positional argument)
+
+28 POP_TOP
+30 LOAD_GLOBAL 0 (print)
+32 LOAD_CONST 4 ("\n1. ランダムなクレジットカードの番号を作成する\n")
+34 CALL_FUNCTION 1 (1 positional argument)
+
+36 POP_TOP
+38 LOAD_GLOBAL 0 (print)
+40 LOAD_CONST 5 ("\n2. ツールのバージョン\n")
+42 CALL_FUNCTION 1 (1 positional argument)
+
+44 POP_TOP
+46 LOAD_GLOBAL 0 (print)
+48 LOAD_CONST 6 ("\n3. ツールの情報\n")
+50 CALL_FUNCTION 1 (1 positional argument)
+
+52 POP_TOP
+54 LOAD_GLOBAL 0 (print)
+56 LOAD_CONST 7 ("\n4. ツールの終了\n")
+58 CALL_FUNCTION 1 (1 positional argument)
+
+60 POP_TOP
+62 LOAD_GLOBAL 2 (input)
+64 LOAD_CONST 8 ("\n選択してください: ")
+66 CALL_FUNCTION 1 (1 positional argument)
+
+68 STORE_FAST 0 (choice)
+70 LOAD_FAST 0 (choice)
+72 LOAD_CONST 9 ("1")
+74 COMPARE_OP 2 (==)
+
+76 POP_JUMP_IF_FALSE 237 (to 474)
+78 LOAD_GLOBAL 2 (input)
+80 LOAD_CONST 10 ("\n情報の保存先のパスを指定しますか？ (Y/N): ")
+82 CALL_FUNCTION 1 (1 positional argument)
+84 LOAD_METHOD 3 (strip)
+86 CALL_METHOD 0 (0 positional arguments)
+88 LOAD_METHOD 4 (upper)
+90 CALL_METHOD 0 (0 positional arguments)
+
+92 STORE_FAST 1 (save_path)
+94 LOAD_FAST 1 (save_path)
+96 LOAD_CONST 11 ("Y")
+98 COMPARE_OP 2 (==)
+
+100 POP_JUMP_IF_FALSE 58 (to 116)
+102 LOAD_GLOBAL 2 (input)
+104 LOAD_CONST 12 ("\n保存先のパスを入力してください: ")
+106 CALL_FUNCTION 1 (1 positional argument)
+108 LOAD_METHOD 3 (strip)
+110 CALL_METHOD 0 (0 positional arguments)
+112 STORE_FAST 2 (path)
+
+114 JUMP_FORWARD 2 (to 120)
+116 LOAD_CONST 0 (None)
+
+118 STORE_FAST 2 (path)
+120 LOAD_GLOBAL 5 (int)
+122 LOAD_GLOBAL 2 (input)
+124 LOAD_CONST 13 ("\n生成数(無制限): ")
+126 CALL_FUNCTION 1 (1 positional argument)
+128 CALL_FUNCTION 1 (1 positional argument)
+
+130 STORE_FAST 3 (num_times)
+132 LOAD_GLOBAL 6 (float)
+134 LOAD_GLOBAL 2 (input)
+136 LOAD_CONST 14 ("\n生成する間隔(秒単位 : 推奨 1)を入力してください: ")
+138 CALL_FUNCTION 1 (1 positional argument)
+140 CALL_FUNCTION 1 (1 positional argument)
+
+142 STORE_FAST 4 (interval)
+144 LOAD_GLOBAL 0 (print)
+146 LOAD_CONST 15 ("\n-------------------------------------------------------------------------------------------\n")
+148 CALL_FUNCTION 1 (1 positional argument)
+
+150 POP_TOP
+152 LOAD_GLOBAL 0 (print)
+154 LOAD_CONST 16 ("\n生成可能なランダムのクレジットカード")
+156 CALL_FUNCTION 1 (1 positional argument)
+
+158 POP_TOP
+160 LOAD_GLOBAL 0 (print)
+162 LOAD_CONST 17 ("\n-------------------------------------------------------------------------------------------")
+164 CALL_FUNCTION 1 (1 positional argument)
+
+166 POP_TOP
+168 LOAD_GLOBAL 0 (print)
+170 LOAD_CONST 18 ("\n1. 470883[三井住友カード]\n")
+172 CALL_FUNCTION 1 (1 positional argument)
+
+174 POP_TOP
+176 LOAD_GLOBAL 0 (print)
+178 LOAD_CONST 19 ("\n2. 464988[PayPay銀行]\n")
+180 CALL_FUNCTION 1 (1 positional argument)
+
+182 POP_TOP
+184 LOAD_GLOBAL 0 (print)
+186 LOAD_CONST 20 ("\n3. 429769[楽天カード]\n")
+188 CALL_FUNCTION 1 (1 positional argument)
+
+190 POP_TOP
+192 LOAD_GLOBAL 0 (print)
+194 LOAD_CONST 21 ("\n4. 420523[AEON-VISA]\n")
+196 CALL_FUNCTION 1 (1 positional argument)
+
+198 POP_TOP
+200 LOAD_GLOBAL 0 (print)
+202 LOAD_CONST 22 ("\n5. 525215[SAISON-MASTER]\n")
+204 CALL_FUNCTION 1 (1 positional argument)
+
+206 POP_TOP
+208 LOAD_GLOBAL 0 (print)
+210 LOAD_CONST 23 ("\n6. 520330[三井住友カード(G)]\n")
+212 CALL_FUNCTION 1 (1 positional argument)
+
+214 POP_TOP
+216 LOAD_GLOBAL 0 (print)
+218 LOAD_CONST 24 ("\n7. ランダムで生成する\n")
+220 CALL_FUNCTION 1 (1 positional argument)
+
+222 POP_TOP
+224 LOAD_GLOBAL 2 (input)
+226 LOAD_CONST 8 ("\n選択してください: ")
+228 CALL_FUNCTION 1 (1 positional argument)
+
+230 STORE_FAST 5 (prefix_choice)
+
+232 LOAD_CONST 25 ("470883")
+
+234 LOAD_CONST 26 ("464988")
+
+236 LOAD_CONST 27 ("429769")
+
+238 LOAD_CONST 28 ("420523")
+
+240 LOAD_CONST 29 ("525215")
+
+242 LOAD_CONST 30 ("520330")
+244 LOAD_CONST 31 (('1', '2', '3', '4', '5', '6'))
+246 BUILD_CONST_KEY_MAP 6
+
+248 STORE_FAST 6 (prefixes)
+250 LOAD_FAST 5 (prefix_choice)
+252 LOAD_FAST 6 (prefixes)
+254 CONTAINS_OP 0 (in)
+256 POP_JUMP_IF_TRUE 133 (to 266)
+258 LOAD_FAST 5 (prefix_choice)
+260 LOAD_CONST 32 ("7")
+262 COMPARE_OP 2 (==)
+
+264 POP_JUMP_IF_FALSE 228 (to 456)
+266 BUILD_LIST 0
+
+268 STORE_FAST 7 (results)
+270 LOAD_GLOBAL 7 (range)
+272 LOAD_FAST 3 (num_times)
+274 CALL_FUNCTION 1 (1 positional argument)
+276 GET_ITER
+278 FOR_ITER 40 (to 360)
+
+280 STORE_FAST 8 (_)
+282 LOAD_FAST 5 (prefix_choice)
+284 LOAD_CONST 32 ("7")
+286 COMPARE_OP 2 (==)
+
+288 POP_JUMP_IF_FALSE 155 (to 310)
+290 LOAD_GLOBAL 8 (random)
+292 LOAD_METHOD 9 (choice)
+294 LOAD_GLOBAL 10 (list)
+296 LOAD_FAST 6 (prefixes)
+298 LOAD_METHOD 11 (values)
+300 CALL_METHOD 0 (0 positional arguments)
+302 CALL_FUNCTION 1 (1 positional argument)
+304 CALL_METHOD 1 (1 positional argument)
+306 STORE_FAST 9 (prefix)
+
+308 JUMP_FORWARD 4 (to 318)
+310 LOAD_FAST 6 (prefixes)
+312 LOAD_FAST 5 (prefix_choice)
+314 BINARY_SUBSCR
+
+316 STORE_FAST 9 (prefix)
+318 LOAD_GLOBAL 12 (generate_number)
+320 LOAD_FAST 9 (prefix)
+322 CALL_FUNCTION 1 (1 positional argument)
+
+324 STORE_FAST 10 (result)
+326 LOAD_FAST 7 (results)
+328 LOAD_METHOD 13 (append)
+330 LOAD_FAST 10 (result)
+332 CALL_METHOD 1 (1 positional argument)
+
+334 POP_TOP
+336 LOAD_GLOBAL 0 (print)
+338 LOAD_FAST 10 (result)
+340 LOAD_CONST 33 ("\n")
+342 BINARY_ADD
+344 CALL_FUNCTION 1 (1 positional argument)
+
+346 POP_TOP
+348 LOAD_GLOBAL 14 (time)
+350 LOAD_METHOD 15 (sleep)
+352 LOAD_FAST 4 (interval)
+354 CALL_METHOD 1 (1 positional argument)
+356 POP_TOP
+
+358 JUMP_ABSOLUTE 139 (to 278)
+360 LOAD_FAST 2 (path)
+
+362 POP_JUMP_IF_FALSE 227 (to 454)
+364 LOAD_GLOBAL 16 (open)
+366 LOAD_FAST 2 (path)
+368 LOAD_CONST 34 ("w")
+370 CALL_FUNCTION 2 (2 positional arguments)
+372 SETUP_WITH 20 (to 414)
+
+374 STORE_FAST 11 (file)
+376 LOAD_FAST 7 (results)
+378 GET_ITER
+380 FOR_ITER 9 (to 400)
+
+382 STORE_FAST 10 (result)
+384 LOAD_FAST 11 (file)
+386 LOAD_METHOD 17 (write)
+388 LOAD_FAST 10 (result)
+390 LOAD_CONST 35 ("\n\n")
+392 BINARY_ADD
+394 CALL_METHOD 1 (1 positional argument)
+396 POP_TOP
+
+398 JUMP_ABSOLUTE 190 (to 380)
+
+400 POP_BLOCK
+402 LOAD_CONST 0 (None)
+404 DUP_TOP
+406 DUP_TOP
+408 CALL_FUNCTION 3 (3 positional arguments)
+410 POP_TOP
+412 JUMP_FORWARD 8 (to 430)
+414 WITH_EXCEPT_START
+416 POP_JUMP_IF_TRUE 210 (to 420)
+418 RERAISE 1
+420 POP_TOP
+422 POP_TOP
+424 POP_TOP
+426 POP_EXCEPT
+
+428 POP_TOP
+430 LOAD_GLOBAL 0 (print)
+432 LOAD_CONST 36 ("\n結果が ")
+434 LOAD_FAST 2 (path)
+436 FORMAT_VALUE 0
+438 LOAD_CONST 37 (" に保存されました。\n")
+440 BUILD_STRING 3
+442 CALL_FUNCTION 1 (1 positional argument)
+
+444 POP_TOP
+446 LOAD_GLOBAL 2 (input)
+448 LOAD_CONST 38 ("press the key....")
+450 CALL_FUNCTION 1 (1 positional argument)
+
+452 POP_TOP
+
+454 JUMP_FORWARD 51 (to 554)
+456 LOAD_GLOBAL 0 (print)
+458 LOAD_CONST 39 ("\n無効な選択です。\n")
+460 CALL_FUNCTION 1 (1 positional argument)
+
+462 POP_TOP
+464 LOAD_GLOBAL 2 (input)
+466 LOAD_CONST 38 ("press the key....")
+468 CALL_FUNCTION 1 (1 positional argument)
+470 POP_TOP
+
+472 JUMP_FORWARD 42 (to 554)
+474 LOAD_FAST 0 (choice)
+476 LOAD_CONST 40 ("2")
+478 COMPARE_OP 2 (==)
+
+480 POP_JUMP_IF_FALSE 250 (to 500)
+482 LOAD_GLOBAL 0 (print)
+484 LOAD_CONST 41 ("\nバージョン: 1.0\n 制作者 : st.xd \n Discord : ELEFTHERIA \n")
+486 CALL_FUNCTION 1 (1 positional argument)
+
+488 POP_TOP
+490 LOAD_GLOBAL 2 (input)
+492 LOAD_CONST 38 ("press the key....")
+494 CALL_FUNCTION 1 (1 positional argument)
+496 POP_TOP
+
+498 JUMP_FORWARD 29 (to 554)
+500 LOAD_FAST 0 (choice)
+502 LOAD_CONST 42 ("3")
+504 COMPARE_OP 2 (==)
+
+506 POP_JUMP_IF_FALSE 264 (to 526)
+508 LOAD_GLOBAL 0 (print)
+510 LOAD_CONST 43 ("\nツールのご利用をしてくださり、誠にありがとうございます。\nこのツールは実際に使用できるクレジットカードを作成するモノではありません。\n未確認のクレジットカードを販売する業者用のツールと言ってもいいでしょう。 \n制作者 : st.xd \nDiscord : ELEFTHERIA \n")
+512 CALL_FUNCTION 1 (1 positional argument)
+
+514 POP_TOP
+516 LOAD_GLOBAL 2 (input)
+518 LOAD_CONST 38 ("press the key....")
+520 CALL_FUNCTION 1 (1 positional argument)
+522 POP_TOP
+
+524 JUMP_FORWARD 15 (to 554)
+526 LOAD_FAST 0 (choice)
+528 LOAD_CONST 44 ("4")
+530 COMPARE_OP 2 (==)
+
+532 POP_JUMP_IF_FALSE 275 (to 546)
+534 LOAD_GLOBAL 0 (print)
+536 LOAD_CONST 45 ("\n終了します。\n")
+538 CALL_FUNCTION 1 (1 positional argument)
+
+540 POP_TOP
+542 LOAD_CONST 0 (None)
+
+544 RETURN_VALUE
+546 LOAD_GLOBAL 0 (print)
+548 LOAD_CONST 39 ("\n無効な選択です。\n")
+550 CALL_FUNCTION 1 (1 positional argument)
+
+552 POP_TOP
+554 LOAD_GLOBAL 2 (input)
+556 LOAD_CONST 38 ("press the key....")
+558 CALL_FUNCTION 1 (1 positional argument)
+
+560 POP_TOP
+562 LOAD_GLOBAL 18 (os)
+564 LOAD_METHOD 19 (system)
+566 LOAD_GLOBAL 18 (os)
+568 LOAD_ATTR 20 (name)
+570 LOAD_CONST 46 ("nt")
+572 COMPARE_OP 2 (==)
+574 POP_JUMP_IF_FALSE 293 (to 580)
+576 LOAD_CONST 47 ("cls")
+578 JUMP_FORWARD 1 (to 582)
+580 LOAD_CONST 48 ("clear")
+582 CALL_METHOD 1 (1 positional argument)
+
+584 POP_TOP
+
+586 JUMP_ABSOLUTE 1 (to 2)

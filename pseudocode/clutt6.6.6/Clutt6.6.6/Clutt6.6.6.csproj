@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C41D78E6-B947-4175-A20C-90DFBE5B12EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hell_clutt.Properties</RootNamespace>
+    <AssemblyName>Clutt6.6.6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Clutt6.6.6.ico</ApplicationIcon>
+    <StartupObject>Class5</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="GClass0.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WARNING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WARNING.Designer.cs">
+      <DependentUpon>WARNING.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="-'.resources" />
+    <EmbeddedResource Include="--%SRaJCu--p198-r2%.resources" />
+    <EmbeddedResource Include="hell_clutt.Resources.clutterus_ico.ico" />
+    <EmbeddedResource Include="hell_clutt.Resources.crossHD_large.ico" />
+    <EmbeddedResource Include="hell_clutt.Resources.crossHD_medium.ico" />
+    <EmbeddedResource Include="hell_clutt.Resources.crossHD_small.ico" />
+    <EmbeddedResource Include="hell_clutt.Resources.invert_snd.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.mirror_snd.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.plg.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.rainbow_snd.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.static_color.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.stretch.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.tunnel.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.wind_edit.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.wind_short.wav" />
+    <EmbeddedResource Include="hell_clutt.Resources.wind_snd.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

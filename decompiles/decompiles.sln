@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chilledwindows", "chilledwindows\chilledwindows.csproj", "{5F5299BF-98DA-4BBB-8159-6C5F439F6501}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERROR 408", "ERROR 408\ERROR 408.csproj", "{044F4026-3A21-4D78-8D17-73A9CE7F517A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "huherror", "huherror\huherror.csproj", "{C6E0F2C2-3D7F-4530-B0C0-36E1D78F914E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Injector", "LOLtite client injector\Injector.csproj", "{25F08AFF-05F7-4522-B20A-DCEF0F944272}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tsutaemon_ver._1._0._0.NET_Framework", "Tsutaemon_ver._1._0._0.NET_Framework\Tsutaemon_ver._1._0._0.NET_Framework.csproj", "{4BC9F05A-F52F-4A86-9105-EB4ED9D3091E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "しるまを倒すゲーム Ver1.0.0.0", "しるまを倒すゲーム Ver1.0.0.0\しるまを倒すゲーム Ver1.0.0.0.csproj", "{ECDAECE2-EDED-4892-9911-843EF6B7EFBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bna.exe", "bna.exe", "{5A16A751-B221-4300-AE6E-992C0A1DC93D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bna", "bna.exe\bna\bna.csproj", "{BAD6CC40-61AC-477E-B524-6E3A3A1478D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bus.exe", "bus.exe", "{2E9D043F-04AC-42BE-AFD6-5E392681F7FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bus", "bus.exe\bus-1\bus.csproj", "{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cin.exe", "cin.exe", "{68E5FE23-E319-4E60-A277-58571E1815B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cin.exe-1", "cin.exe\cin.exe-1\cin.exe-1.csproj", "{2A7F6624-10E7-43B9-B164-4681BC669B1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F5299BF-98DA-4BBB-8159-6C5F439F6501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5299BF-98DA-4BBB-8159-6C5F439F6501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5299BF-98DA-4BBB-8159-6C5F439F6501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5299BF-98DA-4BBB-8159-6C5F439F6501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044F4026-3A21-4D78-8D17-73A9CE7F517A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044F4026-3A21-4D78-8D17-73A9CE7F517A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044F4026-3A21-4D78-8D17-73A9CE7F517A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044F4026-3A21-4D78-8D17-73A9CE7F517A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E0F2C2-3D7F-4530-B0C0-36E1D78F914E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E0F2C2-3D7F-4530-B0C0-36E1D78F914E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E0F2C2-3D7F-4530-B0C0-36E1D78F914E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E0F2C2-3D7F-4530-B0C0-36E1D78F914E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F08AFF-05F7-4522-B20A-DCEF0F944272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F08AFF-05F7-4522-B20A-DCEF0F944272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F08AFF-05F7-4522-B20A-DCEF0F944272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F08AFF-05F7-4522-B20A-DCEF0F944272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC9F05A-F52F-4A86-9105-EB4ED9D3091E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC9F05A-F52F-4A86-9105-EB4ED9D3091E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC9F05A-F52F-4A86-9105-EB4ED9D3091E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC9F05A-F52F-4A86-9105-EB4ED9D3091E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDAECE2-EDED-4892-9911-843EF6B7EFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDAECE2-EDED-4892-9911-843EF6B7EFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDAECE2-EDED-4892-9911-843EF6B7EFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDAECE2-EDED-4892-9911-843EF6B7EFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD6CC40-61AC-477E-B524-6E3A3A1478D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD6CC40-61AC-477E-B524-6E3A3A1478D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD6CC40-61AC-477E-B524-6E3A3A1478D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD6CC40-61AC-477E-B524-6E3A3A1478D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7F6624-10E7-43B9-B164-4681BC669B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7F6624-10E7-43B9-B164-4681BC669B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7F6624-10E7-43B9-B164-4681BC669B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7F6624-10E7-43B9-B164-4681BC669B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAD6CC40-61AC-477E-B524-6E3A3A1478D4} = {5A16A751-B221-4300-AE6E-992C0A1DC93D}
+		{309A7CAB-9AF0-4716-BB2A-E3494D3A7E6C} = {2E9D043F-04AC-42BE-AFD6-5E392681F7FF}
+		{2A7F6624-10E7-43B9-B164-4681BC669B1E} = {68E5FE23-E319-4E60-A277-58571E1815B4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FB39C2A-9881-43FC-AF4A-377CB725911D}
+	EndGlobalSection
+EndGlobal
